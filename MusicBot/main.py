@@ -7,6 +7,7 @@ from discord.ext.commands import Bot
 from discord.ext import tasks
 
 intents = discord.Intents.default()
+intents.voice_states = True
 bot = Bot(intents=intents)
 
 cogs_list = [
